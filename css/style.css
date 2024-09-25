@@ -4,6 +4,17 @@ body {
   background-color: #f7dee4;
 }
 
+header {
+  width: 100%;
+  padding-top: 0px;
+  box-shadow: none;
+  position: fixed !important;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 9;
+}
+
 .header {
   width: 100%;
   max-width: 1500px;
@@ -14,23 +25,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-/* .header {
-  width: 100%;
-  max-width: 1500px;
-  max-height: 120px;
-  position: relative;
-  padding: 0px 20px;
-  margin: 0px auto;
-  margin-bottom: 0px;
-  z-index: 19;
-  display: flex;
-  -moz-box-align: center;
-  align-items: center;
-  -moz-box-pack: justify;
-  justify-content: space-between;
-  box-sizing: border-box;
-} */
 
 .menu {
   display: flex;
@@ -69,6 +63,71 @@ body {
   transition: opacity 0.1s linear;
 }
 
+.welcome_container {
+  width: 100%;
+  max-width: initial;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row;
+  padding-top: 119px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 84%;
+}
+
+.welcome_wrapper {
+  width: 48%;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+h1 {
+  color: rgb(56, 57, 65);
+  width: 100%;
+  text-align: left;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 56.4px;
+  margin-bottom: 0.3em;
+  position: relative;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+h2 {
+  color: rgb(56, 57, 65);
+  text-align: left;
+  margin-top: 14px;
+  width: 100%;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 18.8px;
+  line-height: 1.4;
+  position: relative;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.button_wrap {
+  display: flex;
+  padding-top: 30px;
+}
+
 button {
   border-radius: 0px;
   white-space: nowrap;
@@ -97,6 +156,40 @@ button {
   display: block;
 }
 
-h1 {
-  padding: 20px;
+.welcome_img {
+  width: 48%;
+  display: flex;
+  -moz-box-flex: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social_link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.link {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  margin: 6px;
+  fill: rgb(255, 255, 255);
+}
+
+svg {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  max-width: 1.2rem;
+  max-height: 1.2rem;
 }
