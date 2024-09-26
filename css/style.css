@@ -109,7 +109,7 @@ h1 {
   word-break: break-word;
 }
 
-h2 {
+.welcome_descr {
   color: rgb(56, 57, 65);
   text-align: left;
   margin-top: 14px;
@@ -200,11 +200,47 @@ button {
   justify-content: center;
 }
 
-svg {
+.social_icon {
   pointer-events: none;
   width: 100%;
   height: 100%;
   max-width: 1.2rem;
   max-height: 1.2rem;
   margin-top: 4px;
+}
+
+.connections {
+  background: rgb(252, 252, 252);
+  padding: 40px;
+}
+
+.connections_box {
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  column-gap: 20px;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.connecion {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.connection_descr {
+  color: rgb(56, 57, 65);
+  margin-bottom: 0px;
+  min-width: 150px;
+  width: 100%;
+  text-align: left;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+}
+
+.connection_icon {
 }
