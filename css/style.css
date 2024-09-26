@@ -165,9 +165,21 @@ button {
   position: relative;
 }
 
+.img {
+  width: 768px;
+}
+
 .social {
   display: flex;
   flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  margin: 30px 0px 0px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
 }
 
 .social_link {
@@ -184,6 +196,8 @@ button {
   border-radius: 0px;
   margin: 6px;
   fill: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
 
 svg {
@@ -192,4 +206,5 @@ svg {
   height: 100%;
   max-width: 1.2rem;
   max-height: 1.2rem;
+  margin-top: 4px;
 }
