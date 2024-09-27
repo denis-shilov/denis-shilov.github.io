@@ -15,6 +15,46 @@ header {
   z-index: 9;
 }
 
+.scroll_up_wrapper {
+  position: fixed;
+  z-index: 19;
+  right: 20px;
+  top: auto;
+  bottom: 0px;
+  transform: none;
+  margin-bottom: 20px;
+}
+
+.scroll_up {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(215, 125, 166);
+  border-radius: 0px;
+  box-shadow: rgba(56, 57, 65, 0.15) 0px 4px 8px;
+}
+
+.scroll_up_icon_wrapper {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+
+.scrol_up_icon {
+  flex-shrink: 0;
+  fill: rgb(215, 125, 166);
+}
+
 .header {
   width: 100%;
   max-width: 1500px;
