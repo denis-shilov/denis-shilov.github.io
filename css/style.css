@@ -4,17 +4,6 @@ body {
   background-color: #f7dee4;
 }
 
-header {
-  /* width: 100%;
-  padding-top: 0px;
-  box-shadow: none;
-  position: fixed !important;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  z-index: 9; */
-}
-
 .header {
   width: 100%;
   max-width: 1500px;
@@ -105,7 +94,6 @@ header {
   transition: padding 0.3s linear;
   padding: 10px 0px;
 }
-
 
 .logo_img {
   max-width: 160px;
@@ -483,8 +471,6 @@ button {
   display: block;
 }
 
-{Пробел}
-
 .running_line_block {
   background: rgb(252, 252, 252);
   padding: 40px 0px;
@@ -570,10 +556,14 @@ button {
   height: 24px;
 }
 
-
 .lastes_design_block {
   flex-direction: column;
-  background: linear-gradient(rgba(255, 241, 245, 0.85), rgba(255, 241, 245, 0.85)), url("https://hosting.renderforestsites.com/5699226/1080093/media/7120eda1623616b16a756289c15df689.jpg") center center / cover no-repeat;
+  background: linear-gradient(
+      rgba(255, 241, 245, 0.85),
+      rgba(255, 241, 245, 0.85)
+    ),
+    url("https://hosting.renderforestsites.com/5699226/1080093/media/7120eda1623616b16a756289c15df689.jpg")
+      center center / cover no-repeat;
 }
 
 .lastes_design_elements_a {
