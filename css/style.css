@@ -33,20 +33,14 @@ header {
 
 .navbar {
   transition: background-color 0.3s; /* Плавный переход изменения цвета */
-
   width: 100%;
-  padding-top: 0px;
-  box-shadow: none;
   position: fixed !important;
   z-index: 9;
-  top: 0px;
-  left: 0px;
-  right: 0px;
 }
 
-.navbar .scrolled {
+.scrolled {
   background: rgb(252, 252, 252);
-  width: 100%;
+  padding-top: 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 }
 
@@ -106,6 +100,12 @@ header {
   transition: padding 0.3s linear;
   padding: 20px 0px;
 }
+
+.logo_scrolled {
+  transition: padding 0.3s linear;
+  padding: 10px 0px;
+}
+
 
 .logo_img {
   max-width: 160px;
@@ -411,38 +411,47 @@ button {
 }
 
 .services {
-  position: relative;
+  padding: 80px 0px;
+  margin: 0px auto;
+  box-sizing: border-box;
 }
 
 .servises_bcg {
-  padding: 80px 0px;
   background: linear-gradient(rgba(56, 57, 65, 0.74), rgba(56, 57, 65, 0.74)),
     url("https://hosting.renderforestsites.com/5699226/1080093/media/ec27648b08694c6a8aa8256f9ac700f4.jpg")
       center center / cover no-repeat;
-  word-break: break-word;
-  padding: 80px 0px;
-  display: flex;
-  overflow: hidden;
 }
 
-.servises_descr {
-  padding-top: 0px;
+.servises_block {
   max-width: 836px;
   width: 100%;
   margin: 0px auto;
 }
 
-.servises_descr {
+.services_header {
   width: 100%;
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
   text-align: center;
-  font-family: Playfair Display;
+}
+
+.services_descr {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+  text-align: center;
+  font-family: Lato;
   font-weight: 400;
-  font-size: 44px;
-  margin-bottom: 0.3em;
-  position: relative;
-  white-space: pre-line;
+  font-size: 18.8px;
+  line-height: 1.4;
+}
+
+.price {
+  color: rgb(255, 255, 255);
+  width: 95%;
+  max-width: 1400px;
+  margin: 0px auto;
+  box-sizing: border-box;
 }
 
 .visit_us_btn {
@@ -472,4 +481,91 @@ button {
   background-repeat: no-repeat !important;
   font-size: 14px;
   display: block;
+}
+
+{Пробел}
+
+.running_line_block {
+  background: rgb(252, 252, 252);
+  padding: 40px 0px;
+  word-break: break-word;
+  padding: 80px 0px;
+  display: flex;
+  overflow: hidden;
+}
+
+.running_line_wrap {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.running_line_storage {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.storage_item_idol {
+  opacity: 0;
+  user-select: none;
+  position: absolute;
+  opacity: 0.5;
+  position: relative;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.idol_wrapp {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.idol_descr {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+  margin-bottom: 0.3em;
+  color: rgb(56, 57, 65);
+  line-height: 1.4;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  width: max-content;
+}
+
+.running_line_img {
+  height: 24px;
+  fill: rgb(215, 125, 166);
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  fill: white;
+}
+
+.storage_item_runner {
+  width: max-content;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  position: relative;
+  animation-name: textRun;
+  animation-duration: 3.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.runner_wrap {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
 }
