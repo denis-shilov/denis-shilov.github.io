@@ -569,3 +569,38 @@ button {
   width: 24px;
   height: 24px;
 }
+
+
+.lastes_design_block {
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 241, 245, 0.85), rgba(255, 241, 245, 0.85)), url("https://hosting.renderforestsites.com/5699226/1080093/media/7120eda1623616b16a756289c15df689.jpg") center center / cover no-repeat;
+}
+
+.lastes_design_elements_a {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 1480px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+.lastes_design_elements_b {
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1480px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+.map {
+  width: 100%;
+}
