@@ -556,39 +556,41 @@ button {
   height: 24px;
 }
 
-.lastes_design_block {
+.carousel {
+  background: rgb(255, 241, 245);
   flex-direction: column;
-  background: linear-gradient(
-      rgba(255, 241, 245, 0.85),
-      rgba(255, 241, 245, 0.85)
-    ),
-    url("https://hosting.renderforestsites.com/5699226/1080093/media/7120eda1623616b16a756289c15df689.jpg")
-      center center / cover no-repeat;
 }
 
-.lastes_design_elements_a {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  max-width: 1480px;
-  width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
+.carousel_wrapper {
+  width: 95%;
+  max-width: 1400px;
   margin: 0px auto;
+  box-sizing: border-box;
 }
 
-.lastes_design_elements_b {
-  display: flex;
-  flex-direction: column;
-  -moz-box-align: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1480px;
-  padding-left: 40px;
-  padding-right: 40px;
-  box-sizing: border-box;
+.carousel_base {
+  min-height: 300px;
   margin: 0px auto;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  -moz-box-pack: center;
+  justify-content: center;
+  width: 1000%;
+  max-width: 100%;
+}
+
+.carousel_svg {
+  opacity: 0.3;
+  flex: 0 0 auto;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.a {
+  fill: rgb(215, 125, 166);
 }
 
 .footer {
