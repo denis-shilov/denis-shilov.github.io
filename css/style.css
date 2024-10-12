@@ -591,6 +591,94 @@ button {
   margin: 0px auto;
 }
 
+.footer {
+  background: rgb(56, 57, 65);
+  flex-direction: column;
+}
+
+.footer_descr {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto 50px;
+  text-align: center;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.contact_us {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-box-pack: center;
+  justify-content: center;
+  margin: -20px auto;
+}
+
+.contact_us_blocks {
+  padding: 20px;
+  box-sizing: border-box;
+  word-break: break-word;
+  width: 23%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.blocks_item {
+  user-select: none;
+  margin: 0px 0px 30px;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+
+.blocks_img_wrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  color: rgb(227, 162, 192);
+}
+
+.footer_icons {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+
+.footer_svg {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  max-width: 5rem;
+  max-height: 5rem;
+  fill: rgb(227, 162, 192);
+}
+
+.blocks_descr {
+  color: rgb(227, 162, 192);
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+}
+
+.blocks_information {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.information_style {
+  margin-bottom: 0px;
+}
+
 .map {
   width: 100%;
 }
