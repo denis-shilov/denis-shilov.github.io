@@ -22,18 +22,3 @@ function changeSizeLogo() {
     logo.classList.remove("logo_scrolled"); // Убираем класс, если вернулись наверх
   }
 }
-
-
-$(document).ready(function(){
-  $('.slider').slick({
-    setting-name: setting-value
-  });
-});
-
-$('.one-time').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
-});
