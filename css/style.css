@@ -4,6 +4,9 @@ body {
   background-color: #f7dee4;
 }
 
+.container {
+}
+
 .header {
   width: 100%;
   max-width: 1500px;
@@ -402,12 +405,16 @@ button {
   padding: 80px 0px;
   margin: 0px auto;
   box-sizing: border-box;
-}
-
-.servises_bcg {
   background: linear-gradient(rgba(56, 57, 65, 0.74), rgba(56, 57, 65, 0.74)),
     url("https://hosting.renderforestsites.com/5699226/1080093/media/ec27648b08694c6a8aa8256f9ac700f4.jpg")
       center center / cover no-repeat;
+}
+
+.servises_bcg {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0px auto;
+  box-sizing: border-box;
 }
 
 .servises_block {
@@ -421,25 +428,112 @@ button {
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
   text-align: center;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 44px;
 }
 
 .services_descr {
+  margin-top: 20px;
   width: 100%;
   color: rgb(255, 255, 255);
   margin-top: 0px;
   text-align: center;
-  font-family: Lato;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 18.8px;
-  line-height: 1.4;
 }
 
 .price {
-  color: rgb(255, 255, 255);
-  width: 95%;
-  max-width: 1400px;
-  margin: 0px auto;
+  width: 100%;
+  max-width: 836px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  padding-top: 34px;
+  padding-left: 0px;
+}
+
+.price_item {
+  padding: 16px 0px 16px 5px;
   box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  border-bottom-width: 1px;
+  display: flex;
+}
+
+.price_item_wrapper {
+  padding: 16px 0px 16px 5px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.price_tag {
+  width: 100%;
+  max-width: 121px;
+  margin-left: 20px;
+  padding: 16px 5px 16px 0px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+}
+
+.price_tag_value {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+  margin-bottom: 0.3em;
+}
+
+.price_item_dashed {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+}
+
+.price_item_dashed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  height: 1px;
+  width: 100%;
+  border-bottom: 6px dashed rgba(255, 255, 255, 0.5);
+}
+
+.pris-list_item {
+  width: 100%;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: left;
+  font-family: Playfair Display;
+}
+
+.rice-list_item_descr {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: Playfair Display;
+}
+
+.btn_block {
+  max-width: 836px;
+  width: 100%;
+  margin: 0px auto;
+  -moz-box-pack: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
 }
 
 .visit_us_btn {
@@ -469,6 +563,11 @@ button {
   background-repeat: no-repeat !important;
   font-size: 14px;
   display: block;
+}
+
+.btn_link {
+  text-decoration: none;
+  color: white;
 }
 
 .running_line_block {
@@ -594,6 +693,7 @@ button {
 }
 
 .footer {
+  padding-top: 80px;
   background: rgb(56, 57, 65);
   flex-direction: column;
 }
@@ -682,5 +782,6 @@ button {
 }
 
 .map {
+  padding-top: 80px;
   width: 100%;
 }
