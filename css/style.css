@@ -713,10 +713,6 @@ button {
   display: flex;
 }
 
-.slick-dots {
-  padding: 80px 0;
-}
-
 .a {
   fill: rgb(215, 125, 166);
 }
