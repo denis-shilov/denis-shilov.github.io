@@ -4,9 +4,6 @@ body {
   background-color: #f7dee4;
 }
 
-.container {
-}
-
 .header {
   width: 100%;
   max-width: 1500px;
@@ -268,6 +265,11 @@ button {
   background: rgb(252, 252, 252);
   padding: 40px;
   display: flex;
+}
+
+.connects_wrapper {
+  display: flex;
+  -moz-box-pack: center;
   justify-content: center;
   column-gap: 20px;
   margin: 0px auto;
@@ -288,7 +290,7 @@ button {
   -moz-box-pack: center;
   justify-content: center;
   margin-right: 10px;
-  margin-top: -6px;
+  margin-top: 12px;
 }
 
 .connects_svg {
@@ -658,6 +660,10 @@ button {
 .carousel {
   background: rgb(255, 241, 245);
   flex-direction: column;
+  word-break: break-word;
+  padding: 80px 0px;
+  display: flex;
+  overflow: hidden;
 }
 
 .carousel_wrapper {
@@ -677,6 +683,9 @@ button {
   justify-content: center;
   width: 1000%;
   max-width: 100%;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 33.6px;
 }
 
 .carousel_svg {
@@ -686,6 +695,26 @@ button {
   top: 90px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* slik-slider */
+
+.slider {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-dots {
+  padding: 80px 0;
 }
 
 .a {
