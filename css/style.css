@@ -82,6 +82,30 @@ body {
   font-weight: 400;
 }
 
+.header_link_wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header_link {
+  cursor: pointer;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  color: rgb(56, 57, 65);
+  white-space: nowrap;
+  transition: opacity 0.1s linear;
+}
+
+.header_link:hover {
+  opacity: 75%;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -116,6 +140,7 @@ body {
 }
 
 .welcome_container {
+  padding-top: 119px;
   width: 100%;
   max-width: initial;
   display: flex;
@@ -123,14 +148,6 @@ body {
   justify-content: space-between;
   position: relative;
   flex-direction: row;
-  padding-top: 119px;
-}
-
-.welcome {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 84%;
 }
 
 .welcome_wrapper {
@@ -148,7 +165,14 @@ body {
   padding-top: 40px;
 }
 
-h1 {
+.welcome_descr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 84%;
+}
+
+.welcome_header {
   color: rgb(56, 57, 65);
   width: 100%;
   text-align: left;
@@ -156,12 +180,9 @@ h1 {
   font-weight: 400;
   font-size: 56.4px;
   margin-bottom: 0.3em;
-  position: relative;
-  white-space: pre-line;
-  word-break: break-word;
 }
 
-.welcome_descr {
+.welcome_header_descr {
   color: rgb(56, 57, 65);
   text-align: left;
   margin-top: 14px;
@@ -170,20 +191,28 @@ h1 {
   font-weight: 400;
   font-size: 18.8px;
   line-height: 1.4;
-  position: relative;
-  white-space: pre-line;
-  word-break: break-word;
 }
 
-.button_wrap {
+.welcome_button_wrap {
   display: flex;
   padding-top: 30px;
 }
 
-button {
-  border-radius: 0px;
-  white-space: nowrap;
-  color: rgb(255, 255, 255);
+.welcome_button {
+  display: flex;
+}
+
+.welcome_button:hover {
+  opacity: 75%;
+}
+
+.welcome_link_wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.welcome_link {
   background-color: rgb(215, 125, 166);
   background-position: 0% 0%;
   background-attachment: scroll;
@@ -200,15 +229,18 @@ button {
   text-align: center;
   height: 50px;
   line-height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
   cursor: pointer;
+  border-radius: 0px;
+  white-space: nowrap;
   text-decoration: none !important;
   font-weight: 400;
   background-repeat: no-repeat !important;
-  font-size: 14px;
   display: block;
 }
 
-.welcome_img {
+.welcome_img_wrap {
   width: 48%;
   display: flex;
   -moz-box-flex: 1;
@@ -652,7 +684,7 @@ button {
   fill: rgb(215, 125, 166);
 }
 
-.carousel {
+.reviews {
   background: rgb(255, 241, 245);
   flex-direction: column;
   word-break: break-word;

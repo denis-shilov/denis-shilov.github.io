@@ -64,11 +64,21 @@
           </div>
   
           <div class="menu">
-            <div class="elements link-wrapper">Services</div>
-            <div class="elements link-wrapper">About</div>
-            <div class="elements link-wrapper">Classes</div>
-            <div class="elements link-wrapper">Reviews</div>
-            <div class="elements link-wrapper">Contacts</div>
+            <div class="header_link_wrapper">
+              <a class="header_link" href="#services">Services</a>
+            </div>
+            <div class="header_link_wrapper">
+              <a class="header_link" href="">About</a>
+            </div>
+            <div class="header_link_wrapper">
+              <a class="header_link" href="">Classes</a>
+            </div>
+            <div class="header_link_wrapper">
+              <a class="header_link" href="#reviews">Reviews</a>
+            </div>
+            <div class="header_link_wrapper">
+              <a class="header_link" href="#contacts">Contacts</a>
+            </div>
           </div>
         </div>
 
@@ -78,22 +88,27 @@
     </header>
 
     <main>
-      <div class="welcome_container">
-        <div class="welcome_wrapper">
-          <div class="welcome">
-            <h1>Welcome to Wow Wow Nails</h1>
-            <h2 class="welcome_descr">
-              Enter a world of nail artistry where we transform your nails into
-              stunning masterpieces. Come experience the perfect fusion of skill
-              and style with us.
-            </h2>
-            <div class="button_wrap">
-              <button class="botton">Servises</button>
+
+      <section class="welcome_container">
+          <div class="welcome_wrapper">
+            <div class="welcome_descr">
+              <h1 class="welcome_header" >Welcome to Wow Wow Nails</h1>
+              <p class="welcome_header_descr">
+                Enter a world of nail artistry where we transform your nails into
+                stunning masterpieces. Come experience the perfect fusion of skill
+                and style with us.
+              </p>
+              <div class="welcome_button_wrap">
+                <div class="welcome_button">
+                  <div class="welcome_link_wrapper">
+                    <a class="welcome_link" href="#services">Services</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="welcome_img">
+        <div class="welcome_img_wrap">
           <img class="img" src="/img/Nails.jpg" alt="nails" />
 
           <div class="social">
@@ -146,7 +161,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="connects">
         <div class="connects_element">
@@ -205,7 +220,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section id="services" class="services" >
         <div class="servises_bcg">
           <div class="servises_block">
             <h2 class="services_header">Services and pricing</h2>
@@ -382,7 +397,7 @@
         </div>
       </div>
 
-      <section class="carousel container">
+      <section id="reviews" class="reviews">
        <div class="carousel_wrapper">
         <div class="carousel_base">
 
@@ -408,10 +423,10 @@
 
     <footer class="footer">
 
-    <h1 class="footer_descr">Contact us</h1>
+    <h1 id="contacts" class="footer_descr">Contact us</h1>
     <div class="contact_us" >
 
-      <div id="contacts" class="contact_us_blocks">
+      <div class="contact_us_blocks">
         <div class="blocks_item">
           <div class="blocks_img_wrapper">
             <div class="footer_icons">
