@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -60,6 +64,10 @@ body {
   border: 1px solid rgb(215, 125, 166);
   border-radius: 0px;
   box-shadow: rgba(56, 57, 65, 0.15) 0px 4px 8px;
+}
+
+.scroll_up:hover {
+  background: rgb(255, 241, 245);
 }
 
 .scroll_up_icon_wrapper {
