@@ -634,7 +634,7 @@ button {
   color: rgb(56, 57, 65);
   line-height: 1.8;
   white-space: nowrap;
-  margin-bottom: 0px;
+  margin: 0px;
   width: max-content;
   font-family: Playfair Display;
   font-weight: 400;
