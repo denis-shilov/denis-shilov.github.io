@@ -344,7 +344,7 @@ button {
   margin: 0px;
 }
 
-.ocerlay_front_wrapper {
+.overlay_front_wrapper {
   mask: url("https://static.rfstat.com/renderforest/images/website_maker_images/components/component-images/text14-3.4.0.svg") -2px
     top / auto 100% repeat-x;
   background-color: rgba(255, 255, 255, 0.95);
@@ -569,21 +569,18 @@ button {
 }
 
 .running_line_block {
+  position: relative;
   background: rgb(252, 252, 252);
   padding: 40px 0px;
-  word-break: break-word;
-  padding: 80px 0px;
-  display: flex;
-  overflow: hidden;
 }
 
-.running_line_wrap {
+.running_line_wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0px auto;
 }
 
-.running_line_storage {
+.running_line {
   width: 100%;
   display: flex;
   max-width: 100%;
@@ -591,49 +588,20 @@ button {
   overflow: hidden;
 }
 
-.storage_item_idol {
+.item_img_wrapper_opacity {
   opacity: 0;
-  user-select: none;
   position: absolute;
+  user-select: none;
   opacity: 0.5;
-  position: relative;
   padding-right: 20px;
   box-sizing: border-box;
   display: flex;
   -moz-box-align: center;
   align-items: center;
+  position: relative;
 }
 
-.idol_wrapp {
-  margin-right: 20px;
-  width: 24px;
-  height: 24px;
-}
-
-.idol_descr {
-  font-family: Playfair Display;
-  font-weight: 400;
-  font-size: 20.8px;
-  margin-bottom: 0.3em;
-  color: rgb(56, 57, 65);
-  line-height: 1.4;
-  white-space: nowrap;
-  margin-bottom: 0px;
-  width: max-content;
-}
-
-.running_line_img {
-  height: 24px;
-  fill: rgb(215, 125, 166);
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  max-width: 1.5rem;
-  max-height: 1.5rem;
-  fill: white;
-}
-
-.storage_item_runner {
+.running_line_item {
   width: max-content;
   padding-right: 20px;
   box-sizing: border-box;
@@ -646,11 +614,42 @@ button {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+@keyframes textRun {
+  0% {
+    transform: translateX(0, 0);
+  }
 
-.runner_wrap {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.item_img_wrapper {
   margin-right: 20px;
   width: 24px;
   height: 24px;
+}
+
+.item_descr {
+  color: rgb(56, 57, 65);
+  line-height: 1.8;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  width: max-content;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+}
+
+.item_img {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.item_svg {
+  height: 24px;
+  fill: rgb(215, 125, 166);
 }
 
 .carousel {
