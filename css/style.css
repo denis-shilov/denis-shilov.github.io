@@ -313,11 +313,8 @@ button {
   font-size: 20.8px;
 }
 
-.subelement {
+.overlay {
   position: relative;
-}
-
-.subelemen_telement {
   background-color: rgba(0, 0, 0, 0);
   background-position: 0% 0%, center center;
   background-repeat: repeat, no-repeat;
@@ -328,13 +325,13 @@ button {
   background-clip: border-box, border-box;
   flex-direction: column;
   background-attachment: fixed !important;
-  padding: 80px 0px;
   word-break: break-word;
+  padding: 80px 0px;
   display: flex;
   overflow: hidden;
 }
 
-.subelement_wrap {
+.overlay_front {
   position: relative;
   display: flex;
   -moz-box-pack: center;
@@ -347,7 +344,7 @@ button {
   margin: 0px;
 }
 
-.subelement_overlay {
+.ocerlay_front_wrapper {
   mask: url("https://static.rfstat.com/renderforest/images/website_maker_images/components/component-images/text14-3.4.0.svg") -2px
     top / auto 100% repeat-x;
   background-color: rgba(255, 255, 255, 0.95);
@@ -365,7 +362,7 @@ button {
   word-break: break-word;
 }
 
-.subelement_descr {
+.overlay_descr {
   max-width: 1360px;
   width: 100%;
   display: flex;
@@ -379,7 +376,7 @@ button {
   box-sizing: border-box;
 }
 
-.subelement_p {
+.overlay_p {
   color: rgba(56, 57, 65, 0.5);
   text-align: center;
   margin-top: 0px;
@@ -389,18 +386,17 @@ button {
   font-family: Playfair Display;
   font-weight: 400;
   font-size: 20.8px;
+  margin-bottom: 0.3em;
 }
 
-.subellement_wrapper {
-  font-family: Playfair Display;
-  font-weight: 400;
-  font-size: 56.4px;
-  position: relative;
-  white-space: pre-line;
+.overlay_header {
   width: 100%;
   color: rgb(56, 57, 65);
   text-align: center;
   margin: 0px auto;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 56.4px;
 }
 
 .services {
