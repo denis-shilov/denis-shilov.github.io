@@ -692,6 +692,87 @@ body {
   fill: rgb(215, 125, 166);
 }
 
+.designs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1200px;
+  background: linear-gradient(
+      rgba(255, 241, 245, 0.85),
+      rgba(255, 241, 245, 0.85)
+    ),
+    url("https://hosting.renderforestsites.com/5699226/1080093/media/7120eda1623616b16a756289c15df689.jpg")
+      center center / cover no-repeat;
+}
+
+.designs_descr {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.separator {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(56, 57, 65, 0.94), rgba(56, 57, 65, 0.94)),
+    url("https://hosting.renderforestsites.com/5699226/1080093/media/c854b2f30d6b94f88df2ffa029622dfd.jpg")
+      center center / cover no-repeat;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.about_descr_wrapper {
+  width: 100%;
+  max-width: 630px;
+  margin: 0px 0px 0px 50px;
+}
+
+.about_photo {
+  max-width: 670px;
+}
+
+.container {
+  min-width: 1400px;
+}
+
+.about_descr_header {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.avout_descr_subheader {
+  margin-bottom: 40px;
+  color: rgb(227, 162, 192);
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 20.8px;
+}
+
+.about_descr {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 18.8px;
+  line-height: 1.4;
+}
+
 .reviews {
   background: rgb(255, 241, 245);
   flex-direction: column;
@@ -744,12 +825,34 @@ body {
   margin: auto;
 }
 
+.slider_item {
+  color: rgb(56, 57, 65);
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 33.6px;
+}
+
 .slick-track {
   display: flex;
 }
 
 .a {
   fill: rgb(215, 125, 166);
+}
+
+.classes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1200px;
+  background-color: white;
+}
+
+.classes_descr {
+  font-size: 50px;
 }
 
 .footer {
