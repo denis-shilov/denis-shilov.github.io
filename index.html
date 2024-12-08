@@ -35,59 +35,67 @@
   </head>
 
   <body>
-    <div class="scroll_up_wrapper">
-      <button id="scrollUp" class="scroll_up">
-        <div class="scroll_up_icon_wrapper">
-          <svg
-            class="scrol_up_icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-          >
-            <path
-              d="M24.567 20.862a1.619 1.619 0 000-2.283l-7.417-7.433a1.618 1.618 0 00-2.3 0l-7.417 7.433a1.619 1.619 0 000 2.283 1.619 1.619 0 002.283 0l6.283-6.283 6.283 6.283a1.619 1.619 0 002.283 0z"
-            ></path>
-          </svg>
-        </div>
-      </button>
-    </div>
 
     <header>
 
       <div id="navbar" class="navbar">
         <div class="header">
           <div id="logo" class="logo">
-            <a href="#">
-              <img class="logo_img" src="/icons/logo.png" alt="logo" />
-            </a>
+            <figure>
+              <div class="link_wrapper">
+                <a href="#">
+                  <img class="logo_img" src="/icons/logo.png" alt="logo" />
+                </a>
+              </div>
+            </figure>
           </div>
-  
+
           <div class="menu">
-            <div class="header_link_wrapper">
-              <a class="header_link" href="#services">Services</a>
-            </div>
-            <div class="header_link_wrapper">
-              <a class="header_link" href="#about">About</a>
-            </div>
-            <div class="header_link_wrapper">
-              <a class="header_link" href="#classes">Classes</a>
-            </div>
-            <div class="header_link_wrapper">
-              <a class="header_link" href="#reviews">Reviews</a>
-            </div>
-            <div class="header_link_wrapper">
-              <a class="header_link" href="#contacts">Contacts</a>
-            </div>
+            <nav class="nav">
+              <div class="header_link_wrapper">
+                <a class="header_link" href="#services">Services</a>
+              </div>
+              <div class="header_link_wrapper">
+                <a class="header_link" href="#about">About</a>
+              </div>
+              <div class="header_link_wrapper">
+                <a class="header_link" href="#classes">Classes</a>
+              </div>
+              <div class="header_link_wrapper">
+                <a class="header_link" href="#reviews">Reviews</a>
+              </div>
+              <div class="header_link_wrapper">
+                <a class="header_link" href="#contacts">Contacts</a>
+              </div>
+            </nav>
           </div>
+
         </div>
 
-      </header>
       </div>
 
     </header>
 
-    <main>
+
+    <main class="body_container">
+
+      <div class="scroll_up_wrapper">
+        <button id="scrollUp" class="scroll_up">
+          <div class="scroll_up_icon_wrapper">
+            <svg
+              class="scrol_up_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M24.567 20.862a1.619 1.619 0 000-2.283l-7.417-7.433a1.618 1.618 0 00-2.3 0l-7.417 7.433a1.619 1.619 0 000 2.283 1.619 1.619 0 002.283 0l6.283-6.283 6.283 6.283a1.619 1.619 0 002.283 0z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </div>
 
       <section class="welcome_container">
           <div class="welcome_wrapper">
@@ -164,7 +172,8 @@
       </section>
 
       <section class="connects">
-        <div class="connects_element">
+        <div class="connects_wrapper">
+          <div class="connects_element">
           <div class="connects_icon">
             <svg class="connects_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32">
               <path d="M10.575 32a60.382 60.382 0 01-3.821-5.449l-.151-.26c1.143-.647 2.511-1.028 3.967-1.028s2.824.381 4.008 1.049l-.041-.021a64.18 64.18 0 01-4.07 5.852l.108-.143zm0-7.914a9.26 9.26 0 00-4.627 1.233l.045-.024C2.986 20.338-.001 14.263-.001 10.575-.001 4.734 4.734 0 10.574 0s10.575 4.735 10.575 10.575c0 3.688-2.987 9.763-5.994 14.72a9.17 9.17 0 00-4.579-1.209h-.003zm0-19.382a5.872 5.872 0 105.872 5.872 5.872 5.872 0 00-5.872-5.872zm0 10.575a4.693 4.693 0 11.02 0h-.001z"></path>
@@ -201,6 +210,7 @@
           <h2 class="connects_descr">
             <b>Call us</b> 646-593-5847, or 646-418-2747
           </h2>
+        </div>
         </div>
       </section>
 

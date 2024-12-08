@@ -27,7 +27,7 @@ function changeNavbarColor() {
 }
 
 function changeSizeLogo() {
-  const navbar = document.getElementById("logo");
+  const logo = document.getElementById("logo");
 
   if (window.scrollY > 50) {
     logo.classList.add("logo_scrolled"); // Добавляем класс при прокрутке
