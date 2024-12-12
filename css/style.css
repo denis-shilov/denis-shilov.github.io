@@ -31,7 +31,6 @@ figure {
   position: relative;
   padding: 0px 20px;
   margin: 0px auto;
-  width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -163,27 +162,18 @@ figure {
 .welcome_container {
   padding-top: 119px;
   width: 100%;
-  max-width: initial;
   display: flex;
-  -moz-box-pack: justify;
   justify-content: space-between;
   position: relative;
-  flex-direction: row;
   max-width: 1500px;
   margin: 0 auto;
 }
 
 .welcome_wrapper {
-  width: 48%;
-  -moz-box-flex: 1;
-  flex-grow: 1;
   display: flex;
-  -moz-box-pack: center;
   justify-content: center;
-  -moz-box-align: center;
   align-items: center;
   position: relative;
-  box-sizing: border-box;
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -264,16 +254,17 @@ figure {
 }
 
 .welcome_img_wrap {
-  width: 48%;
   display: flex;
-  -moz-box-flex: 1;
-  flex-grow: 1;
-  box-sizing: border-box;
-  position: relative;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  overflow: hidden; /* Скрытие части изображения, выходящей за пределы контейнера */
 }
 
 .img {
-  width: 768px;
+  width: 100%; /* Растягивание изображения по ширине контейнера */
+  height: auto; /* Сохранение пропорций */
+  max-height: 100%; /* Максимальная высота 100% */
+  position: relative;
 }
 
 .social {
@@ -739,10 +730,6 @@ figure {
   max-width: 670px;
 }
 
-.container {
-  min-width: 1400px;
-}
-
 .about_descr_header {
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
@@ -782,7 +769,7 @@ figure {
 }
 
 .carousel_wrapper {
-  width: 95%;
+  width: 50%;
   max-width: 1400px;
   margin: 0px auto;
   box-sizing: border-box;
